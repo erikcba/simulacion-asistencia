@@ -69,3 +69,20 @@ function crearUsuario(event) {
 
 }
 
+//////////////////// Filtrar alumnos por clase ////////////////////////////
+
+
+const selectClases = document.getElementById('filtrar-horarios');
+
+selectClases.addEventListener('change', function(){
+    
+    const alumnosLStorage = JSON.parse(localStorage.getItem("alumnos"));
+
+    let horarioSeleccionado = selectClases.value;
+
+    const alumnosPorHora = alumnosLStorage.filter(alumno => alumno.horario === horarioSeleccionado)
+
+    console.log(alumnosPorHora);
+})
+
+
