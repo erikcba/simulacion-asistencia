@@ -55,7 +55,7 @@ function crearUsuario(event) {
 
         btnEliminar.forEach(boton => {
             boton.addEventListener("click", (e) => {
-                const div = document.querySelector(".alumno")
+                const div = e.target.closest(".alumno");
                 if(div) {
                     div.remove();
                 }
