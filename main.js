@@ -7,6 +7,7 @@ function crearUsuario(event) {
     const nombreAlumnoInput = document.getElementById('agregar-nombre').value;
     const clasesAlumnoInput = document.getElementById('agregar-clases').value;
     const aptoInput = document.getElementById('agregar-apto-medico').value;
+    const horarioAlumno = document.getElementById('horario-clase').value;
     
     const imgPerfil = './imagenes/img-perfil.svg';
     
@@ -22,6 +23,7 @@ function crearUsuario(event) {
             nombre: nombreAlumnoInput,
             clases: clasesAlumnoInput,
             apto: aptoInput,
+            horario:horarioAlumno,
         }
     
         alumnos.push(alumno);
