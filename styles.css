@@ -58,3 +58,11 @@ body {
 #clasesAlumno {
     font-weight: 500;
 }
+
+#btnEliminar {
+    margin-left: auto;
+}
+
+#btnEliminar:hover {
+    cursor: pointer;
+}
