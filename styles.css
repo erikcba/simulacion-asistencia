@@ -42,6 +42,16 @@ body {
     gap: 12px;
 }
 
+#lista-alumnos-horario{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
 .alumno {
     display: flex;
     align-items: center;
